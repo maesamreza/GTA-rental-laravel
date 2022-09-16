@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::view('admin/dashboard','Admin.pages.dashboard');
+Route::view('/admin','Admin.Auth.login');
