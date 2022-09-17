@@ -25,15 +25,21 @@
 
     .color {
         color: #16a34a !important;
-        text-shadow: 5px 6px 6px rebeccapurple;
+        text-shadow: 0px 2px 2px black;
+        font-family: inherit;
     }
 
     .shadow {
-        box-shadow: 0px 2px 13px 3px white !important;
+        box-shadow: 0px 2px 13px 3px #343a40 !important;
+    }
+
+    .bg-login {
+        background: url('{{ asset('assets/img/background-img.svg') }}') no-repeat 50%, 50%;
+        background-size: cover;
     }
 </style>
 
-<body style="background-color: #16a34a">
+<body class="bg-login">
     <div class="loader"></div>
     <div id="app">
         <section class="section">
@@ -50,7 +56,7 @@
                                     <div class=" col-md-12 ">
 
                                         <h3 class="text-center color"><b>
-                                                Welcome Admin</b></h4>
+                                                ADMIN LOGIN</b></h4>
                                     </div>
                                 </div>
                             </div>
@@ -68,9 +74,6 @@
                                         <div class="d-block">
                                             <label for="password" class="control-label">Password</label>
                                             <div class="float-right">
-                                                <a href="auth-forgot-password.html" class="text-small">
-                                                    Forgot Password?
-                                                </a>
                                             </div>
                                         </div>
                                         <input id="password" type="password" class="form-control" name="password"
@@ -87,7 +90,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                        <button type="submit" class="btn btn-success btn-lg btn-block" tabindex="4">
                                             Login
                                         </button>
                                     </div>

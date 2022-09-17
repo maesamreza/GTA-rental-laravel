@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="{{ asset('assets/bundles/jqvmap/dist/jqvmap.min.css') }}">
     <!-- Bootstrap CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    {{-- data table css files --}}
+    <link rel="stylesheet" href="{{asset('assets/bundles/datatables/datatables.min.css')}}">
+  <link rel="stylesheet" href="{{asset('assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css')}}">
+    {{-- data table css files --}}
         
     <!-- Custom style CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
@@ -47,6 +52,14 @@
 
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
+    {{-- data table js files --}}
+    <script src="{{asset('assets/bundles/datatables/datatables.min.js')}}"></script>
+    <script src="{{asset('assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('assets/bundles/jquery-ui/jquery-ui.min.js')}}"></script>
+    <!-- Page Specific JS File -->
+    <script src="{{asset('assets/js/page/datatables.js')}}"></script>
+    {{-- data table js files --}}
+    
 
     
 </body>
